@@ -17,14 +17,14 @@ func String(ok bool) *string {
 		// s := "Hello, World!"
 		// return &s
 		// You now can do this!
-		return new.New("Hello, World!")
+		return ptr.New("Hello, World!")
 	}
 	return nil
 }
 
 func Int32(ok bool) *int32 {
 	if ok {
-		return new.New[int32](42)
+		return ptr.New[int32](42)
 	}
 	return nil
 }
